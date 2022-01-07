@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.switch[type='checkbox'] {
+  @apply absolute block w-6 h-6 rounded-full bg-white border-4 border-gray-300 appearance-none cursor-pointer;
+}
+
+.switch[type='checkbox']:focus {
+  @apply ring-0 ring-offset-0 outline-none shadow-none;
+}
+
+.switch[type='checkbox']:checked {
+  @apply right-0 border-blue-600 bg-none bg-white;
+}
+.switch[type='checkbox'] + label {
+  @apply block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer;
+}
+.switch[type='checkbox']:checked + label {
+   @apply bg-blue-600;
+}

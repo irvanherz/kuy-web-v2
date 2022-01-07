@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.media-carousel .slick-slide > div {
+  @apply flex;
+}
+
+.media-carousel .slick-dots {
+  @apply bottom-0;
+}
